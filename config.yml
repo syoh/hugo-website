@@ -16,14 +16,17 @@ menu:
         #   url: books/
         #   weight: 5 
         - name: Papers
-          url: papers/
+          url: publications
           weight: 2
         - name: Courses
           url: courses/
           weight: 3
-        # - name: Data
-        #   url: data/
-        #   weight: 4 
+        - name: Tags
+          url: tags/
+          weight: 4
+        - name: Data
+          url: data/
+          weight: 4 
         # - name: Blog
         #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
         #   weight: 6
@@ -62,8 +65,8 @@ params:
           buttons:
             - name: Papers
               url: papers/
-            # - name: Data
-            #   url: data/
+            - name: Data
+              url: data/
             # - name: Books
             #   url: books/
             - name: Courses
@@ -76,8 +79,8 @@ params:
             #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
-        # - name: CV
-        #   url: cv.pdf
+        - name: CV
+          url: cv.pdf
         # - name: Email
         #   url: mailto:igelfeld@regensburg.edu
         # - name: Zoom
@@ -89,7 +92,7 @@ params:
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=1z6dv-MAAAAJ
         - name: GitHub
-          url: https://github.com/pmichaillat
+          url: https://github.com/syoh
         # - name: Substack
         #   url: https://pmichaillat.substack.com
         # - name: YouTube
