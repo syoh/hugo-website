@@ -1,0 +1,58 @@
+{
+  "name": "Hugo Website Development",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "DerrickBeal.hugo-themekaustik",
+        "budparr.language-hugo-vscode",
+        "jsynowiec.vscode-insertdates",
+        "mhutchie.git-graph",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "streetsidesoftware.code-spell-checker",
+        "mads-hartmann.bash-language-server",
+        "foxundermoon.shell-format"
+      ],
+      "settings": {
+        "go.lintOnSave": "package",
+        "go.formatOnSave": true,
+        "[html]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.wordWrap": "on"
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.tabSize": 2,
+          "editor.insertSpaces": true
+        },
+        "editor.formatOnPaste": true,
+        "editor.rulers": [80, 120],
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
+      }
+    }
+  },
+  "postCreateCommand": ".devcontainer/postCreate.sh",
+  "forwardPorts": [1313],
+  "portsAttributes": {
+    "1313": {
+      "label": "Hugo Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "remoteUser": "root"
+}

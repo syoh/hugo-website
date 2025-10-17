@@ -1,0 +1,73 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Hugo: Start Server",
+      "type": "shell",
+      "command": "hugo",
+      "args": ["server", "--buildDrafts", "--buildFuture"],
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "error.*",
+          "file": 1,
+          "location": 2,
+          "message": 3
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*Start server.*",
+          "endsPattern": "^.*Watching for changes.*"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "Hugo: Build Site",
+      "type": "shell",
+      "command": "hugo",
+      "args": ["--minify"],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Hugo: Clean Build",
+      "type": "shell",
+      "command": "make",
+      "args": ["clean"],
+      "group": "build"
+    },
+    {
+      "label": "Hugo: Validate Configuration",
+      "type": "shell",
+      "command": "hugo",
+      "args": ["config"],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Make: Help",
+      "type": "shell",
+      "command": "make",
+      "args": ["help"],
+      "group": "none",
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}
