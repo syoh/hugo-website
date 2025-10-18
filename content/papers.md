@@ -6,7 +6,6 @@ description: "This dataset contains all irregular verbs in known Romance languag
 summary: "This dataset contains all irregular verbs in known Romance languages."
 showToc: true
 disableAnchoredHeadings: false
-
 ---
 
 ## Overview

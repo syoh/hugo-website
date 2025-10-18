@@ -5,18 +5,15 @@ theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
-  pagerSize: 20
+    pagerSize: 20
 
 taxonomies:
     tag: tags
 
 menu:
     main:
-        # - name: Books
-        #   url: books/
-        #   weight: 5 
         - name: Papers
-          url: publications
+          url: papers
           weight: 2
         - name: Courses
           url: courses/
@@ -24,12 +21,6 @@ menu:
         - name: Tags
           url: tags/
           weight: 4
-        - name: Data
-          url: data/
-          weight: 4 
-        # - name: Blog
-        #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-        #   weight: 6
 
 params:
     description: "Sang-Yun Oh's Academic Homepage"
@@ -47,7 +38,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers"]
+    MainSections: ["papers", "courses"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -56,51 +47,29 @@ params:
     comments: false
     math: true
     profileMode:
-          enabled: true
-          title: Professor Sang-Yun Oh
-          subtitle: "I am an Associate Professor in the Department of Statistics & Applied Probability at UC Santa Barbara and a Faculty Scientist at Lawrence Berkeley National Laboratory. My research focuses on developing scalable methods for statistical inference and high-performance computing to uncover complex relationships in large-scale data. I apply these tools to challenges in genomics, finance, and neuroscience."
-          imageUrl: "profile-picture.jpg"
-          imageWidth: 160
-          imageHeight: 160
-          buttons:
+        enabled: true
+        title: Sang-Yun Oh
+        subtitle: "I am an Associate Professor in the Department of Statistics & Applied Probability at UC Santa Barbara and a Faculty Scientist at Lawrence Berkeley National Laboratory. My research focuses on developing scalable methods for statistical inference and high-performance computing to uncover complex relationships in large-scale data. I apply these tools to challenges in genomics, finance, and neuroscience."
+        imageUrl: "profile-picture.jpg"
+        imageWidth: 160
+        imageHeight: 160
+        buttons:
             - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            # - name: Books
-            #   url: books/
+              url: papers
             - name: Courses
               url: courses/
             - name: Tags
               url: tags/
-            # - name: Archive
-            #   url: archive/
-            # - name: Blog
-            #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
         - name: CV
           url: cv.pdf
-        # - name: Email
-        #   url: mailto:igelfeld@regensburg.edu
-        # - name: Zoom
-        #   url: https://www.zoom.us/my/igelfeld
         - name: Location
           url: location/
-        # - name: Office Hours
-        #   url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=1z6dv-MAAAAJ
         - name: GitHub
           url: https://github.com/syoh
-        # - name: Substack
-        #   url: https://pmichaillat.substack.com
-        # - name: YouTube
-        #   url: https://www.youtube.com/@pmichaillat
-        # - name: Twitter
-        #   url: https://x.com/pmichaillat
-        # - name: Bluesky
-        #   url: https://bsky.app/profile/pmichaillat.bsky.social
 
     assets:
         disableScrollBarStyle: true
