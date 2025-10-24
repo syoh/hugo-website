@@ -40,6 +40,12 @@ hugo server
 
 The command builds the website on your machine and makes it available at http://localhost:1313, rebuilding automatically as you edit. You can modify the content of the repository and develop your website entirely on your machine.
 
+### Development container and GitHub Codespaces development
+
+[GitHub Codespaces](https://docs.github.com/en/codespaces) or the [Development Container framework](https://code.visualstudio.com/docs/devcontainers/containers) supporting tools (e.g., Visual Studio Code) can be used for development and preview.
+
+After your session starts, open a terminal and execute `make serve` to preview your website.
+
 ### Online deployment
 
 Once your website is ready to be made public, commit your content and template changes and push them to the website repository on GitHub. It is convenient to use GitHub Desktop for this Git operation.
