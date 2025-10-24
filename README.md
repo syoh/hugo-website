@@ -44,7 +44,12 @@ The command builds the website on your machine and makes it available at http://
 
 [GitHub Codespaces](https://docs.github.com/en/codespaces) or the [Development Container framework](https://code.visualstudio.com/docs/devcontainers/containers) supporting tools (e.g., Visual Studio Code) can be used for development and preview.
 
-After your session starts, open a terminal and execute `make serve` to preview your website.
+After your session starts, open a terminal and execute the following to preview your website.
+
+```bash
+source .devcontainer/serve-pages.sh 
+serve_pages
+```
 
 ### Online deployment
 
